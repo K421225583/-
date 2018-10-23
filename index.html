@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我要贷款</title>
+		<link rel="stylesheet" type="text/css" href="mui/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="header">
+				<div class="imgs">
+					<a href="">
+						<img src="img/banner.jpg" alt="" />
+					</a>
+				</div>
+				<div class="lun">
+					<img src="img/body.png" />
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<p class="nei">恭喜<span>147****1002</span>成功贷款<span>￥1000元</span></p>
+							</div>
+							<div class="swiper-slide">
+								<p class="nei">恭喜<span>147****1002</span>成功贷款<span>￥1000元</span></p>
+							</div>
+							<div class="swiper-slide">
+								<p class="nei">恭喜<span>147****1002</span>成功贷款<span>￥1000元</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="article">
+				<div id="tab">
+					<div class="select">
+						<p>热门推荐</p>
+						<span></span>
+					</div>
+					<div>
+						<p>信用卡贷</p>
+						<span></span>
+					</div>
+					<div>
+						<p>芝麻分贷</p>
+						<span></span>
+					</div>
+				</div>
+				<div id="box">
+					<div class="show">
+						<ul>
+							<li class="lis">
+								<a href="">
+									<img src="img/logo.png"/>
+									<div class="lis_cont">
+										<div class="left">
+											<p class="lis_title">借一笔</p>
+											<p>3000额度随便花，无需征信秒下款</p>
+										</div>
+										<div class="right">
+											<p>0.1~0.5万</p>
+											<p>通过率98%</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="lis">
+								<a href="">
+									<img src="img/logo.png"/>
+									<div class="lis_cont">
+										<div class="left">
+											<p class="lis_title">钱宝宝</p>
+											<p>3000额度随便花，无需征信秒下款</p>
+										</div>
+										<div class="right">
+											<p>0.1~0.5万</p>
+											<p>通过率98%</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div>2222222222</div>
+					<div>3333333333</div>
+				</div>
+			</div>
+		</div>
+		<footer class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active" href="index.html">
+		    	<img src="img/index1.png"/>
+		        <p class="mui-tab-label">我要借钱</p>
+		    </a>
+		    <a class="mui-tab-item" href="tui.html">
+		    	<img src="img/zan.png"/>
+		        <p class="mui-tab-label">推客后台</p>
+		    </a>
+		    <a class="mui-tab-item">
+		    	<img src="img/geren.png"/>
+		        <p class="mui-tab-label">个人中心</p>
+		    </a>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true, //可选选项，自动滑动
+			direction : 'vertical'
+		})
+		//tab 切换
+		$('#tab div').click(function() {
+			var i = $(this).index();//下标第一种写法
+			//var i = $('tit').index(this);//下标第二种写法
+			$(this).addClass('select').siblings().removeClass('select');
+			$('#box >div').eq(i).show().siblings().hide();
+		});
+	
+	
+	</script>
+
+</html>
